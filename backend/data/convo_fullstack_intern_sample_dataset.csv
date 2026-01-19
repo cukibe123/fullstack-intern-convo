@@ -1,0 +1,31 @@
+id,interview_id,question,response_text,theme,sentiment,created_at
+1,INT-1,What was your biggest challenge using Convo?,Charts would help us share results,Visualization,negative,2025-12-28T10:43:54.311937
+2,INT-1,How do you feel about the insights generated?,Pricing feels high for a small team,Pricing,negative,2025-12-23T10:43:54.311937
+3,INT-1,What was your biggest challenge using Convo?,Visual summaries would improve clarity,Visualization,neutral,2025-12-21T10:43:54.311937
+4,INT-2,What was your biggest challenge using Convo?,The setup process was confusing at first,Onboarding,positive,2026-01-05T10:43:54.311937
+5,INT-2,What was your biggest challenge using Convo?,Processing time could be improved,Speed,positive,2026-01-11T10:43:54.311937
+6,INT-2,How would you describe your onboarding experience?,Charts would help us share results,Visualization,neutral,2026-01-07T10:43:54.311937
+7,INT-3,What was your biggest challenge using Convo?,Some insights felt generic,Insights Quality,negative,2026-01-02T10:43:54.311937
+8,INT-3,What feature would you most like to see improved?,Some insights felt generic,Insights Quality,positive,2026-01-19T10:43:54.311937
+9,INT-3,What was your biggest challenge using Convo?,Some insights felt generic,Insights Quality,neutral,2025-12-23T10:43:54.311937
+10,INT-4,What feature would you most like to see improved?,I wanted more supporting quotes,Insights Quality,neutral,2026-01-14T10:43:54.311937
+11,INT-4,How would you describe your onboarding experience?,"Once I figured it out, it was smooth",Onboarding,positive,2026-01-18T10:43:54.311937
+12,INT-4,What was your biggest challenge using Convo?,Zapier support would unlock a lot for us,Integrations,neutral,2026-01-15T10:43:54.311937
+13,INT-5,What feature would you most like to see improved?,Visual summaries would improve clarity,Visualization,positive,2026-01-11T10:43:54.311937
+14,INT-5,What was your biggest challenge using Convo?,"Once I figured it out, it was smooth",Onboarding,positive,2026-01-13T10:43:54.311937
+15,INT-5,What was your biggest challenge using Convo?,Some insights felt generic,Insights Quality,positive,2026-01-01T10:43:54.311937
+16,INT-6,How would you describe your onboarding experience?,I wanted more supporting quotes,Insights Quality,neutral,2025-12-25T10:43:54.311937
+17,INT-6,What feature would you most like to see improved?,Some insights felt generic,Insights Quality,negative,2025-12-28T10:43:54.311937
+18,INT-6,What was your biggest challenge using Convo?,Visual summaries would improve clarity,Visualization,negative,2025-12-25T10:43:54.311937
+19,INT-7,How do you feel about the insights generated?,Insights were generated very quickly,Speed,neutral,2026-01-01T10:43:54.311937
+20,INT-7,How do you feel about the insights generated?,I wanted more supporting quotes,Insights Quality,neutral,2026-01-15T10:43:54.311937
+21,INT-7,How do you feel about the insights generated?,The setup process was confusing at first,Onboarding,neutral,2026-01-01T10:43:54.311937
+22,INT-8,What was your biggest challenge using Convo?,Some insights felt generic,Insights Quality,negative,2026-01-17T10:43:54.311937
+23,INT-8,What feature would you most like to see improved?,Charts would help us share results,Visualization,negative,2026-01-04T10:43:54.311937
+24,INT-8,How would you describe your onboarding experience?,Slack integration would be useful,Integrations,neutral,2025-12-24T10:43:54.311937
+25,INT-9,What feature would you most like to see improved?,The value makes sense for larger teams,Pricing,negative,2026-01-02T10:43:54.311937
+26,INT-9,How would you describe your onboarding experience?,There was some noticeable latency,Speed,positive,2025-12-24T10:43:54.311937
+27,INT-9,How would you describe your onboarding experience?,Insights were generated very quickly,Speed,positive,2026-01-16T10:43:54.311937
+28,INT-10,How do you feel about the insights generated?,"Once I figured it out, it was smooth",Onboarding,positive,2026-01-14T10:43:54.311937
+29,INT-10,How would you describe your onboarding experience?,Visual summaries would improve clarity,Visualization,positive,2026-01-01T10:43:54.311937
+30,INT-10,How would you describe your onboarding experience?,Zapier support would unlock a lot for us,Integrations,neutral,2026-01-06T10:43:54.311937
