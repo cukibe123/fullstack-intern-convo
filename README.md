@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/436b1856-781f-48e9-9d10-13e7bf681cfb" />This is a small fullstack assignment for the recruitment stage at Convo[https://getconvo.ai/]. Convo is an AI voice interviewing platform that generates insights from user interviews. Product teams review interview responses, summaries, and insights through a dashboard.
 
-## Getting Started
+## Quick Start
 
-First, run the development server:
+For both the frontend and backend, you can redirect to these folders and first run ```npm install```. This step helps us to install all necessary dependencies for the project. When the installation is done, both ends can be started by the command ```npm run dev```. Although they are executed under development, it is enough for the scope of this assignment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The server should run first so it can take over the port 3000. The frontend is going to take over the port 3001 as the 3000 is taken by the server. The reason is that I hardcode the address for the api call. As soon as both ends are on, you can immediately start experiencing the design of the frontend.
+
+## Assignment Structure
+
+The project is divided into two folders, one for the backend, and one for the frontend. The frontend is written using Next.js, while the backend is written using Node.js (Express).
+
+```
+Fullstack-intern-convo/
+├── backend/
+│   ├── data/                          # Local data / mock storage
+│   ├── src/
+│   │   ├── routes/                    
+│   │   │   └── responses.routes.ts    # Interview responses endpoints
+│   │   │
+│   │   ├── services/                 
+│   │   │   └── responses.service.ts   # Interview responses service logic
+│   │   │
+│   │   ├── types/
+│   │   │   └── interviewResponse.ts   # Interview response type definitions
+│   │   │
+│   │   ├── app.ts                     # Express app configuration
+│   │   │
+│   │   └── server.ts                  # Server entry point
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   └── tsconfig.json
+│
+├── frontend/
+│   ├── src/                           
+│   │   ├── app/                      
+│   │   │   └── page.tsx               # Main page
+│   │   │
+│   │   ├── components/                # Reusable UI components
+│   │   │   ├── ResponseFilters.tsx
+│   │   │   ├── ResponseList.tsx
+│   │   │   └── ResponseStatsPanel.tsx
+│   │   │
+│   │   ├── libs/                      # Shared utilities
+│   │   │   └── api/                   # API client logic
+│   │   │
+│   │   └── types/                     
+│   ├── eslint.config.mjs
+│   ├── next-env.d.ts
+│   ├── next.config.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.mjs
+│   └── tsconfig.json
+├── .env                               # Environment variables
+├── .gitignore
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What are built in this assignment
+This assignment requires participants to build a small full-stack feature that displays interview insights and support basic interaction. Therefore, the assignment is seperated into two parts, frontend and backend.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The frontend is built with **Next.js** and provides a simple user interface for exploring interview responses. Users can apply basic filters based on **sentiment** and **theme**, and view lightweight visualizations. Below here is the list of features:
+- Display a list of interview responses. All interview questions are fetched from the backend via a single call.
+- Clearly indicate sentiment using color coding:
+  - Green as Positive
+  - Red as Negative
+  - Blue as Neutral
+- Filter responses by:
+  - Sentiment (multiples can be selected)
+  - Theme (mutiples can be selected)
+- Display simple visualizations:
+  - Overall response distribution by **sentiment**
+  - Overall response distribution by **theme**
+  - Filtered response distribution by **sentiment**
+  - Filtered response distribution by **theme**
 
-## Learn More
+The main page is composed of three elements: the filter panel, the question list, and the distribution panel. The design and future development of the dashboard are more straightforward when we have a clear separation between components. 
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The backend is built with **Node.js** and provides a single API logic for retrieving all interview questions. Each interview questions have these properties:
+- question
+- response_text
+- sentiment
+- theme
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Files are split into ```/routes``` and ```/services```. Although it is unnecessary to overengineer things, I believe this separation is necessary. It gives readers a quick grasp of the backend's layers, instead of putting everything in a single folder. 
 
-## Deploy on Vercel
+The dataset is the CSV file and stored under the ```/data``` folder. The backend processes and extracted desired columns from the CSV file. Each row is converted into the custom type structure. Both frontend and backend use the same type structure to ensure clarity and consistency when we read and understand the code.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## What would you improve with more time
+This assignment requires to be finished around 1.5-2 hours. Within 2 hours, I spent most of the time designing and brainstorming the UX of the frontend (around 1-1.5 hours to think, design and implement). In my point of view, there are many ways in how we can make the frontend more interactive and beautiful. There are several points that I would love to implement more if I have more time:
+- Interactive pie/bar charts for the data distribution (This could have been done using libraries, but at the time, it was a bit of challenge for me to learn and get used to new libraries). The current design of the distribution panel looks too simple, not yet informative.
+- Questions are displayed in sorted categories (easier for reading in the first place).
+- Add more transitions when new categories are selected (Smoother transitions provides better experiences, currently the page looks rigid).
+- Take responsive layout and mobile designs into account (It would be nice if we have this since it improves compatibility).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Preview of the project
+
+Overall []
+
+When we filter sentiments []
+
+When we filter themes []
+
+When we filter both sentiments and themes []
+
+
