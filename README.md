@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/436b1856-781f-48e9-9d10-13e7bf681cfb" />This is a small fullstack assignment for the recruitment stage at Convo[https://getconvo.ai/]. Convo is an AI voice interviewing platform that generates insights from user interviews. Product teams review interview responses, summaries, and insights through a dashboard.
+This is a small fullstack assignment for the recruitment stage at Convo[https://getconvo.ai/]. Convo is an AI voice interviewing platform that generates insights from user interviews. Product teams review interview responses, summaries, and insights through a dashboard.
 
 ## Quick Start
 
