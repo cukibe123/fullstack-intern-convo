@@ -90,7 +90,7 @@ The backend is built with **Node.js** and provides a single API logic for retrie
 
 Files are split into ```/routes``` and ```/services```. Although it is unnecessary to overengineer things, I believe this separation is necessary. It gives readers a quick grasp of the backend's layers, instead of putting everything in a single folder. 
 
-The dataset is the CSV file and stored under the ```/data``` folder. The backend processes and extracted desired columns from the CSV file. Each row is converted into the custom type structure. Both frontend and backend use the same type structure to ensure clarity and consistency when we read and understand the code.
+The dataset is the CSV file and stored under the ```/data``` folder. The backend processes and extracts desired columns from the CSV file. Each row is converted into the custom type structure. Both frontend and backend use the same type structure to ensure clarity and consistency when we read and understand the code.
 
 ## What would you improve with more time
 This assignment requires to be finished around 1.5-2 hours. Within 2 hours, I spent most of the time designing and brainstorming the UX of the frontend (around 1-1.5 hours to think, design and implement). In my point of view, there are many ways in how we can make the frontend more interactive and beautiful. There are several points that I would love to implement more if I have more time:
