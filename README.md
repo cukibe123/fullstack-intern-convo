@@ -1,7 +1,7 @@
-This is a small fullstack assignment for the recruitment stage at Convo[https://getconvo.ai/]. Convo is an AI voice interviewing platform that generates insights from user interviews. Product teams review interview responses, summaries, and insights through a dashboard.
+## Introduction
+This is a small fullstack assignment for the recruitment stage at [Convo](https://getconvo.ai/). **Convo** is an AI voice interviewing platform that generates insights from user interviews. Product teams review interview responses, summaries, and insights through a dashboard.
 
 ## Quick Start
-
 For both the frontend and backend, you can redirect to these folders and first run ```npm install```. This step helps us to install all necessary dependencies for the project. When the installation is done, both ends can be started by the command ```npm run dev```. Although they are executed under development, it is enough for the scope of this assignment.
 
 The server should run first so it can take over the port 3000. The frontend is going to take over the port 3001 as the 3000 is taken by the server. The reason is that I hardcode the address for the api call. As soon as both ends are on, you can immediately start experiencing the design of the frontend.
@@ -101,12 +101,16 @@ This assignment requires to be finished around 1.5-2 hours. Within 2 hours, I sp
 
 ## Preview of the project
 
-Overall []
+### Overall of the assignment
+![overall](/images/overall.png)
 
-When we filter sentiments []
+### When we filter sentiments
+![sentiment](/images/sentiment.png)
 
-When we filter themes []
+### When we filter themes
+![theme](/images/theme.png)
 
-When we filter both sentiments and themes []
+### When we filter sentiments
+![theme_and_entiment](/images/theme_and_sentiment.png)
 
 
