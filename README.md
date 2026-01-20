@@ -4,7 +4,7 @@ This is a small fullstack assignment for the recruitment stage at [Convo](https:
 ## Quick Start
 For both the frontend and backend, you can redirect to these folders and first run ```npm install```. This step helps us to install all necessary dependencies for the project. When the installation is done, both ends can be started by the command ```npm run dev```. Although they are executed under development, it is enough for the scope of this assignment.
 
-The server should run first so it can take over the port 3000. The frontend is going to take over the port 3001 as the 3000 is taken by the server. The reason is that I hardcode the address for the api call. As soon as both ends are on, you can immediately start experiencing the design of the frontend.
+The server should run first so it can take over the port 3000. The frontend is going to take over the port 3001 as the 3000 is taken by the server. The reason is that I hardcode the address for the api call. As soon as both ends are on, you can immediately start experiencing the frontend.
 
 ## Assignment Structure
 
